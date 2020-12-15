@@ -20,6 +20,8 @@
     ],
     "rules": {
       "no-console": "off",
+      "camelcase": "off",
+      "@typescript-eslint/camelcase": "off",
       "class-methods-use-this": "off",
       "prettier/prettier": "error",
       "import/extensions": [
