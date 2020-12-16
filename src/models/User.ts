@@ -18,7 +18,7 @@ class User {
   email: string;
 
   @Column('varchar')
-  password: string;
+  password?: string;
 
   @Column('varchar')
   avatar: string;
