@@ -27,7 +27,7 @@ usersRouter
 
       return res.status(201).json(user);
     } catch (err) {
-      return res.status(400).json({ error: err.message });
+      return res.status(err.statusCode).json({ error: err.message });
     }
   })
   .patch(
@@ -47,7 +47,7 @@ usersRouter
 
         return res.status(201).json(user);
       } catch (err) {
-        return res.status(400).json({ error: err.message });
+        return res.status(err.statusCode).json({ error: err.message });
       }
     },
   );
